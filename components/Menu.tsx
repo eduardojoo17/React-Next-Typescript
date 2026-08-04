@@ -18,7 +18,7 @@ export default function Menu() {
           <a href="/React4"> React #4</a>
         </button>
         <button className="border-2 rounded-2xl m-1 py-2 px-2 bg-linear-to-r from-cyan-500 to-blue-800">
-          em breve
+          <a href="/curriculo">Curriculo</a>
         </button>
       </nav>
     </main>
