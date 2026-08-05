@@ -5,11 +5,10 @@ import Topo from "@/components/Topo";
 
 export default function Turma() {
   return (
-    <body className="bg-amber-700">
-      
+    <div>
       <Menu />
-      <CardAluno2 nome="Eduardo" curso="programador" nota={9} />
+      <CardAluno2 nome="Eduardo" curso="programador" nota={10} presente />
       <Curso curso="Programação" />
-    </body>
+    </div>
   );
 }

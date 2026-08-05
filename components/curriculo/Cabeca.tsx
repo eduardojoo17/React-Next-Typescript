@@ -12,18 +12,20 @@ export default function Cabeca({ nome, email, cidade, celular }: dados) {
       </h1>
       <br />
       <table>
-        <tr>
-          <th>Email:</th>
-          <td>{email}</td>
-        </tr>
-        <tr>
-          <th>Cidade:</th>
-          <td>{cidade}</td>
-        </tr>
-        <tr>
-          <th>Celular:</th>
-          <td>{celular}</td>
-        </tr>
+        <tbody>
+          <tr>
+            <th>Email:</th>
+            <td>{email}</td>
+          </tr>
+          <tr>
+            <th>Cidade:</th>
+            <td>{cidade}</td>
+          </tr>
+          <tr>
+            <th>Celular:</th>
+            <td>{celular}</td>
+          </tr>
+        </tbody>
       </table>
     </header>
   );

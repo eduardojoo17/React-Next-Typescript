@@ -4,7 +4,12 @@ export default function Inferior() {
       <br />
       <h2 className="bg-cyan-100 font-bold">portifolio Github:</h2>
 
-      <a href="https://github.com/eduardojoo17">Github</a>
+      <a
+        href="https://github.com/eduardojoo17"
+        className="text-2xl font-bold border min-w-auto"
+      >
+        Github
+      </a>
     </footer>
   );
 }

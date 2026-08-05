@@ -10,20 +10,18 @@ export default function Endereco() {
     uf: "",
   });
 
-  function enviaCep (e) {
+  function enviaCep(e) {
     const cep = e.target.value;
-    fetch(`https://viacep.com.br/ws/${cep}/json/`)
-        .then((res) => res.json)
-        
+    fetch(`https://viacep.com.br/ws/${cep}/json/`).then((res) => res.json);
   }
 
   return (
-    <form className="border bg-cyan-100 p-4 m-10">
+    <form className="border text-black bg-cyan-300 p-4 m-10">
       <p className="text-center">Api Cep</p>
       <label htmlFor="cep">Cep:</label>
       <br />
       <input
-        className="border placeholder-gray-300 "
+        className="border placeholder-gray-500 "
         placeholder="00000000"
         type="text"
         id="cep"
@@ -34,7 +32,7 @@ export default function Endereco() {
       <label htmlFor="rua">Rua:</label>
       <br />
       <input
-        className="border placeholder-gray-300"
+        className="border placeholder-gray-500"
         placeholder="digite a rua"
         type="text"
         id="rua"
@@ -44,7 +42,7 @@ export default function Endereco() {
       <label htmlFor="rua">Bairro:</label>
       <br />
       <input
-        className="border placeholder-gray-300"
+        className="border placeholder-gray-500"
         placeholder="nome do bairro"
         type="text"
         id="bairro"
@@ -53,7 +51,7 @@ export default function Endereco() {
       <br />
       <label htmlFor="uf">Uf:</label> <br />
       <input
-        className="border placeholder-gray-300"
+        className="border placeholder-gray-500"
         placeholder="sigla do estado"
         type="text"
         id="uf"
