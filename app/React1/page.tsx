@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col justify-between">
       <div>
-        <Topo />
+     
         <Menu />
         <Titulo />
         <CardAluno />

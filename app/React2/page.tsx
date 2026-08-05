@@ -6,7 +6,7 @@ import Topo from "@/components/Topo";
 export default function Turma() {
   return (
     <body className="bg-amber-700">
-      <Topo />
+      
       <Menu />
       <CardAluno2 nome="Eduardo" curso="programador" nota={9} />
       <Curso curso="Programação" />
