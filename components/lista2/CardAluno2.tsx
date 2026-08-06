@@ -4,6 +4,7 @@ type card = {
   curso: string;
   nota: number;
   presente: boolean;
+  
 };
 
 export default function CardAluno2({ nome, curso, nota, presente }: card) {
@@ -14,6 +15,7 @@ export default function CardAluno2({ nome, curso, nota, presente }: card) {
         <Curso curso={curso} />
         <p>{nota}</p>
         <span>{presente ? "🟢 presente" : "⚪ ausente"}</span>
+        
       </h2>
     </div>
   );
