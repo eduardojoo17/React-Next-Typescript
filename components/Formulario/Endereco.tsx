@@ -15,13 +15,13 @@ export default function Endereco() {
   function enviaCep(e: React.FocusEvent<HTMLInputElement>) {
     const cep = e.target.value;
     if (cep.length !== 8) {
-      return (setErro("precisa ter 8 números") );
+      return setErro("precisa ter 8 números");
     }
     fetch(`https://viacep.com.br/ws/${cep}/json/`)
       .then((res) => res.json())
       .then((dados) => {
         if (dados.erro) {
-          return (setErro("cep não encontrado"));
+          return setErro("cep não encontrado");
         }
         setForm({
           ...form,
@@ -45,7 +45,14 @@ export default function Endereco() {
         name="cep"
         onBlur={(e) => enviaCep(e)}
       />
-      {erro && <p>{erro}<video width="200" height="200" autoPlay><source src="cat.mp4" /></video></p>}
+      {erro && (
+        <p>
+          {erro}
+          <video width="200" height="200" autoPlay>
+            <source src="cat.mp4" />
+          </video>
+        </p>
+      )}
       <br />
       <label htmlFor="rua">Rua:</label>
       <br />

@@ -18,7 +18,7 @@ export default function CardNomeType({
       <div className=" border p-4">
         {nome}
         <div>{curso}</div>
-        <div> nota: {nota}</div>
+        {nota > 6 && <div> {nota}✅</div>}
         <div>{presente ? "🟢presente" : "⚪ausente"}</div>
         <div> {bolsista && "🎓"}</div>
       </div>
