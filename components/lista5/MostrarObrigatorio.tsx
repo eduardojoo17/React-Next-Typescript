@@ -15,7 +15,7 @@ export default function MostrarObrigatorio() {
         setEnviado(form.nome)
     }
     return (
-        <form onSubmit={enviar}>
+        <form className="flex flex-col border m-2 w-fit" onSubmit={enviar}>
             <input className="border" value={form.nome} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setForm({ nome: e.target.value })} />
             <button className="border">enviar</button>
             {enviado && <p>matriculado: {enviado}</p>}</form>

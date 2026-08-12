@@ -10,7 +10,7 @@ export default function EnviarForm() {
         alert("enviado: " + form.nome)
     }
     return (
-        <form onSubmit={envio}>
+        <form className="border m-4" onSubmit={envio}>
             <input className="border" value={form.nome} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setForm({ nome: e.target.value })} />
             <button type="submit" className="border">enviar</button>
         </form>
