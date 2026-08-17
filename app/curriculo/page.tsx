@@ -1,24 +1,18 @@
+"use client";
 import Cabeca from "@/components/curriculo/Cabeca";
 import Corpo from "@/components/curriculo/Corpo";
 import Inferior from "@/components/curriculo/Inferior";
-import Menu from "@/components/Menu";
+import { useState } from "react";
 
 export default function Curriculo() {
+  const [mostrar, setMostar] = useState<boolean>(false);
+
   return (
-  <div>
-<Menu/>
-    <div className="bg-amber-100 m-6">
-      <Cabeca
-        nome="João Eduardo Paiva da Costa"
-        email="eduardojoo17@gmail.com"
-        cidade="Petrópolis"
-        celular="24-99298-0960"
-      />
-      
-      <Corpo />
+    <div className="bg-amber-50">
+      <Cabeca selecionar={(n) => setMostar(n === "sobre")} />
+
+      <Corpo mostrar={mostrar} />
       <Inferior />
     </div>
-  </div>
-    
   );
 }

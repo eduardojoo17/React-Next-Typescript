@@ -1,32 +1,22 @@
-type dados = {
-  nome: string;
-  email: string;
-  cidade: string;
-  celular: string;
+"use client";
+type cabecaProps = {
+  selecionar: (nome: string) => void;
 };
-export default function Cabeca({ nome, email, cidade, celular }: dados) {
+
+export default function Cabeca({ selecionar }: cabecaProps) {
+  const menuTopo: string[] = ["inicio", "sobre"];
+
   return (
-    <header className="text-black ">
-      <h1 className="flex flex-col justify-center text-center text-4xl bg-cyan-100">
-        {nome}
-      </h1>
-      <br />
-      <table>
-        <tbody>
-          <tr>
-            <th>Email:</th>
-            <td>{email}</td>
-          </tr>
-          <tr>
-            <th>Cidade:</th>
-            <td>{cidade}</td>
-          </tr>
-          <tr>
-            <th>Celular:</th>
-            <td>{celular}</td>
-          </tr>
-        </tbody>
-      </table>
-    </header>
+    <main className="flex flex-row text-center gap-2 p-2 bg-stone-900 justify-end font-serif:gergia">
+      {menuTopo.map((n, i) => (
+        <button
+          className="border shadow hover:shadow p-2 rounded-2xl transform hover:-translate-y-0.5 "
+          key={i}
+          onClick={() => selecionar(n)}
+        >
+          {n}
+        </button>
+      ))}
+    </main>
   );
 }
