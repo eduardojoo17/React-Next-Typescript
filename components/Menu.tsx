@@ -23,6 +23,10 @@ export default function Menu() {
         <button className="border-2 rounded-2xl m-1 py-2 px-2 bg-linear-to-r from-cyan-500 to-blue-800 ">
           <a href="/React6"> React #6</a>
         </button>
+
+        <button className="border-2 rounded-2xl m-1 py-2 px-2 bg-linear-to-r from-cyan-500 to-blue-800 ">
+          <a href="/React7"> React #7</a>
+        </button>
         <button className="border-2 rounded-2xl m-1 py-2 px-2 bg-linear-to-r from-cyan-500 to-blue-800">
           <a href="/curriculo">Curriculo</a>
         </button>
